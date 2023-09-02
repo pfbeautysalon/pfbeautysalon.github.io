@@ -26,3 +26,5 @@ plugins:
 
 postcss:
   cache: false
+
+baseurl             : "pfbeautysalon.com" # does not include hostname
