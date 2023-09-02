@@ -27,5 +27,5 @@ plugins:
 postcss:
   cache: false
 
-baseurl: "" # does not include hostname
-url: "https://pfbeautysalon.github.io/"
+baseurl: "pfbeautysalon.github.io" # does not include hostname
+url: "https://pfbeautysalon.github.io"
