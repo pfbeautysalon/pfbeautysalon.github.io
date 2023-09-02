@@ -26,3 +26,10 @@ plugins:
 
 postcss:
   cache: false
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
