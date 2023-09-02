@@ -1,3 +1,3 @@
 # pfbeautysalon
 
-A humble store in Singapore
+A humble beauty store in Bukit Panjang.
