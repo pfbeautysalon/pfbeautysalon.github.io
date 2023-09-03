@@ -1,24 +1,33 @@
-name: James Build and Deploy
+# .github/workflows/github-pages.yml
 
-on: [push]
+name: ohsostatic
 
 permissions:
   contents: write
-  
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+  github-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
-
-      - name: Install Dependencies
-        run: npm install
-       
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - run: npm install
       - name: Build site
         uses: limjh16/jekyll-action-ts@v2
-
+        with:
+          enable_cache: true
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
