@@ -2,6 +2,9 @@
 
 name: ohsostatic
 
+permissions:
+  contents: write
+
 on:
   push:
     branches:
