@@ -1,8 +1,29 @@
 ---
 title: Services
 ---
-<h1>Latest Posts</h1>
 
+<div class="flex flex-col items-center bg-slate-100">
+  <h1 class="text-6xl">Facial</h1>
+  <div class="grid grid-cols-2 mx-40">
+    {% for mask in site.data.facial %}
+      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl">{{ mask.name }}</a>
+      <div class="text-4xl text-right lg:text-xl">
+        {{ mask.price }}
+      </div>
+    {% endfor %}
+  </div>
+  <div>More Info + Consult us buttons</div>
+  <div class="flex items-center justify-center mt-10 gap-x-6">
+    <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">View all Services</a>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <ul>
   {% for post in site.posts %}
     <li>
