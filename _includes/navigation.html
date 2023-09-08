@@ -7,7 +7,7 @@
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button type="button" class="m-4 inline-flex items-center justify-center rounded-lg p-2.5 text-gray-700" id="desktopMenuButton">
+      <button type="button" class="m-4 inline-flex items-center justify-center rounded-lg p-2.5 text-gray-700" id="mobileDefaultButton">
         <span class="sr-only">Open main menu</span>
         <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -24,14 +24,14 @@
   </nav>
   
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="hidden lg:hidden animate-slideIn" role="dialog" aria-modal="true" id="mobileMenu">
+  <div class="hidden outline-none lg:hidden animate-slideIn" role="dialog" aria-modal="true" id="mobileSideMenu">
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
         <a href="#" class="m-8 p-1.5">
           <img class="w-auto h-20 rounded-lg outline" src="../assets/photos/logos/transparent-logo.png" alt="">
         </a>
-        <button type="button" class="m-4 rounded-lg p-2.5 text-gray-700" id="mobileMenuButton">
+        <button type="button" class="m-4 rounded-lg p-2.5 text-gray-700" id="mobileSideMenuButton">
           <span class="sr-only">Close menu</span>
           <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -54,15 +54,15 @@
 </header>
 
 <script>
-  const mobileMenuButton = document.getElementById('mobileMenuButton');
-  const desktopMenuButton = document.getElementById('desktopMenuButton');
-  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileSideMenuButton = document.getElementById('mobileSideMenuButton');
+  const mobileDefaultButton = document.getElementById('mobileDefaultButton');
+  const mobileSideMenu = document.getElementById('mobileSideMenu');
   
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+  mobileSideMenuButton.addEventListener('click', () => {
+    mobileSideMenu.classList.toggle('hidden');
   });
 
-  desktopMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+  mobileDefaultButton.addEventListener('click', () => {
+    mobileSideMenu.classList.toggle('hidden');
   });
 </script>
