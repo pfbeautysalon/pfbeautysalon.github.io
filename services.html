@@ -3,32 +3,99 @@ title: Services
 ---
 
 <div class="flex flex-col items-center bg-slate-100">
-  <h1 class="text-6xl">Facial</h1>
-  <div class="grid grid-cols-2 mx-40">
-    {% for mask in site.data.facial %}
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl">{{ mask.name }}</a>
-      <div class="text-4xl text-right lg:text-xl">
-        {{ mask.price }}
+  <h1 class="m-12 text-6xl font-semibold">Facial</h1>
+  <!-- Regular Mask Treatment Section -->
+  <h2 class="m-10 text-5xl lg:m-5">Mask treatments</h2>
+  {% for mask in site.data.facial %}
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">{{ mask.name }}</div>
+        <div class="lg:ml-32">{{ mask.property }}</div>
       </div>
-    {% endfor %}
-  </div>
-  <div>More Info + Consult us buttons</div>
-  <div class="flex items-center justify-center mt-10 gap-x-6">
-    <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">View all Services</a>
+      <div class="">{{ mask.price }}</div>
+    </div>
+  {% endfor %}
+  <!-- Special Mask Treatment Section -->
+  <h2 class="m-10 text-5xl lg:m-5">Special Treatments</h2>
+  {% for mask in site.data.facial-special %}
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">{{ mask.name }}</div>
+        <div class="lg:ml-32">{{ mask.property }}</div>
+      </div>
+      <div class="">{{ mask.price }}</div>
+    </div>
+  {% endfor %}
+  <div class="flex">
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">More info</a>
+    </div>
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
+    </div>
   </div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<ul>
+
+<!-- Machine Therapy -->
+<div class="flex flex-col items-center">
+  <h1 class="m-12 text-6xl font-semibold">Machine Therapy</h1>
+  <!-- Aurora -->
+  <h2 class="m-10 text-5xl lg:m-5">Aurora</h2>
+  {% for mask in site.data.machine-aurora %}
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+
+      <a href="" class="font-semibold">{{ mask.name }}</a>
+      <div class="">{{ mask.property }}</div>
+      <div class="">{{ mask.price }}</div>
+    </div>
+  {% endfor %}
+  <!-- Indiba -->
+  <h2 class="m-10 text-5xl lg:m-5">Indiba</h2>
+  {% for mask in site.data.machine-indiba %}
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+      <a href="" class="font-semibold">{{ mask.name }}</a>
+      <div class="">{{ mask.property }}</div>
+      <div class="">{{ mask.price }}</div>
+    </div>
+  {% endfor %}
+  <div class="flex">
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">More info</a>
+    </div>
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Injury Treatment -->
+<div class="flex flex-col items-center bg-slate-100">
+  <h1 class="m-12 text-6xl font-semibold">Injury Treatment</h1>
+  <h2 class="m-10 text-5xl lg:m-5">Injury Treatment</h2>
+  {% for mask in site.data.injury %}
+    <blue class="flex flex-col items-center justify-between w-1/2 m-2 text-4xl lg:text-xl lg:flex lg:flex-row">
+      <a href="" class="font-semibold">{{ mask.name }}</a>
+      <div class="">{{ mask.property }}</div>
+      <div class="">{{ mask.price }}</div>
+    </blue>
+  {% endfor %}
+  <div class="flex">
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">More info</a>
+    </div>
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
+    </div>
+  </div>
+</div>
+
+<!-- <ul>
   {% for post in site.posts %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}
     </li>
   {% endfor %}
-</ul>
+</ul> -->

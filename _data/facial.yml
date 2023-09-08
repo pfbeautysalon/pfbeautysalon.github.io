@@ -1,18 +1,27 @@
-- name: Soothing Oats (Sensitive Skin)
+- name: Green Tea mask
+  property: (Anti-stress)
   price: $128
-- name: Green tea (Anti-stress)
+- name: Daitom mask
+  property: (Detoxifying)
   price: $128
-- name: 
-  price: 
-- name: 
-  price: 
-- name: 
-  price: 
-- name: 
-  price: 
-- name: 
-  price: 
-- name: 
-  price: 
-- name: 
-  price: 
+- name: Orange mask
+  property: (Anti-wrinkles)
+  price: $128
+- name: Oats mask 👍
+  property: (Soothing sensitive skin)
+  price: $128
+- name: Mint Essence mask
+  property: (Oxygenating & Moisturizing)
+  price: $138
+- name: Linseed Aloe Vera mask
+  property: (Regenerating & Anti-irritant)
+  price: $138
+- name: Kiwi mask
+  property: (Firming & whitening)
+  price: $138
+- name: Goji Berries mask
+  property: (Antioxidant & Anti-aging)
+  price: $138
+- name: 24 Karat Gold Dust mask
+  property: (Remineralizing & revitalizing)
+  price: $148
