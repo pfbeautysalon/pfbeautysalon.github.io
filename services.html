@@ -31,12 +31,12 @@
       </a>
     </div>
     <div class="flex lg:hidden">
-      <button type="button" class="m-4 inline-flex items-center justify-center rounded-lg p-2.5 text-gray-700" id="desktopMenuButton">
+      <div type="button" class="m-4 inline-flex items-center justify-center p-2.5" id="mobileDefaultButton">
         <span class="sr-only">Open main menu</span>
         <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
-      </button>
+      </div>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       
@@ -60,19 +60,20 @@
   </nav>
   
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div class="hidden lg:hidden animate-slideIn" role="dialog" aria-modal="true" id="mobileMenu">
+  <div class="hidden lg:hidden animate-slideIn" role="dialog" aria-modal="true" id="mobileSideMenu">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+    <div type="button" class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
-        <a href="#" class="m-8 p-1.5">
-          <img class="w-auto h-20 rounded-lg outline" src="../assets/photos/logos/transparent-logo.png" alt="">
+        <a href="#" class="p-1.5">
+          <img class="w-auto rounded-lg h-28" src="../assets/photos/logos/transparent-logo.png" alt="">
         </a>
-        <button type="button" class="m-4 rounded-lg p-2.5 text-gray-700" id="mobileMenuButton">
+        <!-- Cross Button -->
+        <div class="m-4 outline-none p-2.5" id="mobileSideMenuButton">
           <span class="sr-only">Close menu</span>
           <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
-        </button>
+        </div>
       </div>
       <div class="flow-root mt-6">
         <div class="-my-6 divide-y divide-gray-500/10">
@@ -102,81 +103,202 @@
 </header>
 
 <script>
-  const mobileMenuButton = document.getElementById('mobileMenuButton');
-  const desktopMenuButton = document.getElementById('desktopMenuButton');
-  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileSideMenuButton = document.getElementById('mobileSideMenuButton');
+  const mobileDefaultButton = document.getElementById('mobileDefaultButton');
+  const mobileSideMenu = document.getElementById('mobileSideMenu');
   
-  mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+  mobileSideMenuButton.addEventListener('click', () => {
+    mobileSideMenu.classList.toggle('hidden');
   });
 
-  desktopMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+  mobileDefaultButton.addEventListener('click', () => {
+    mobileSideMenu.classList.toggle('hidden');
   });
 </script>
     <div class="flex flex-col items-center bg-slate-100">
-  <h1 class="text-6xl">Facial</h1>
-  <div class="grid grid-cols-2 mx-40">
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl">Soothing Oats (Sensitive Skin)</a>
-      <div class="text-4xl text-right lg:text-xl">
-        $128
+  <h1 class="m-12 text-6xl font-semibold">Facial</h1>
+  <!-- Regular Mask Treatment Section -->
+  <h2 class="m-10 text-5xl lg:m-5">Mask treatments</h2>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Green Tea mask</div>
+        <div class="lg:ml-32">(Anti-stress)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl">Green tea (Anti-stress)</a>
-      <div class="text-4xl text-right lg:text-xl">
-        $128
+      <div class="">$128</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Daitom mask</div>
+        <div class="lg:ml-32">(Detoxifying)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$128</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Orange mask</div>
+        <div class="lg:ml-32">(Anti-wrinkles)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$128</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Oats mask 👍</div>
+        <div class="lg:ml-32">(Soothing sensitive skin)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$128</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Mint Essence mask</div>
+        <div class="lg:ml-32">(Oxygenating & Moisturizing)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$138</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Linseed Aloe Vera mask</div>
+        <div class="lg:ml-32">(Regenerating & Anti-irritant)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$138</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Kiwi mask</div>
+        <div class="lg:ml-32">(Firming & whitening)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$138</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Goji Berries mask</div>
+        <div class="lg:ml-32">(Antioxidant & Anti-aging)</div>
       </div>
-    
-      <a href="" class="my-2 text-4xl lg:my-1 lg:text-xl"></a>
-      <div class="text-4xl text-right lg:text-xl">
-        
+      <div class="">$138</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">24 Karat Gold Dust mask</div>
+        <div class="lg:ml-32">(Remineralizing & revitalizing)</div>
       </div>
-    
-  </div>
-  <div>More Info + Consult us buttons</div>
-  <div class="flex items-center justify-center mt-10 gap-x-6">
-    <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">View all Services</a>
+      <div class="">$148</div>
+    </div>
+  
+  <!-- Special Mask Treatment Section -->
+  <h2 class="m-10 text-5xl lg:m-5">Special Treatments</h2>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Eye Perfection</div>
+        <div class="lg:ml-32">(Intense rejuvenating)</div>
+      </div>
+      <div class="">$128</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Advanced Nacar treatment</div>
+        <div class="lg:ml-32">(Max anti-aging)</div>
+      </div>
+      <div class="">$298</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
+      <div class="lg:flex">
+        <div class="font-semibold">Personalized Skin Sensations</div>
+        <div class="lg:ml-32">(Deep nourishment)</div>
+      </div>
+      <div class="">$298</div>
+    </div>
+  
+  <div class="flex">
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">More info</a>
+    </div>
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
+    </div>
   </div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<ul>
+
+<!-- Machine Therapy -->
+<div class="flex flex-col items-center">
+  <h1 class="m-12 text-6xl font-semibold">Machine Therapy</h1>
+  <!-- Aurora -->
+  <h2 class="m-10 text-5xl lg:m-5">Aurora</h2>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+
+      <a href="" class="font-semibold">Upper Back</a>
+      <div class="">(35mins)</div>
+      <div class="">$68</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+
+      <a href="" class="font-semibold">Thigh</a>
+      <div class="">(35mins)</div>
+      <div class="">$68</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+
+      <a href="" class="font-semibold">Tummy</a>
+      <div class="">(35mins)</div>
+      <div class="">$68</div>
+    </div>
+  
+  <!-- Indiba -->
+  <h2 class="m-10 text-5xl lg:m-5">Indiba</h2>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+      <a href="" class="font-semibold">Tummy</a>
+      <div class="">(35mins)</div>
+      <div class="">$98</div>
+    </div>
+  
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+      <a href="" class="font-semibold">Armpit</a>
+      <div class="">(35mins)</div>
+      <div class="">$98</div>
+    </div>
+  
+  <div class="flex">
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">More info</a>
+    </div>
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Injury Treatment -->
+<div class="flex flex-col items-center bg-slate-100">
+  <h1 class="m-12 text-6xl font-semibold">Injury Treatment</h1>
+  <h2 class="m-10 text-5xl lg:m-5">Injury Treatment</h2>
+  
+  <div class="flex">
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">More info</a>
+    </div>
+    <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
+      <a href="/services" class="p-6 text-4xl font-semibold text-white bg-red-500 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
+    </div>
+  </div>
+</div>
+
+<!-- <ul>
   
     <li>
       <h2><a href="/2023/07/20/Casmara-Mask-Treatment.html">Casmara mask treatment</a></h2>
@@ -198,7 +320,7 @@ edible berry of several species of woody vines in the genus Actinidia.</p>
 
     </li>
   
-</ul>
+</ul> -->
   </body>
   <footer>
     <div class="text-white bg-gray-900 py-36 lg:py-20">
