@@ -1,0 +1,6 @@
+- name: TCM massage
+  property: (60mins)
+  price: $90
+- name: TCM injury treatment
+  property: (per injury)
+  price: $90

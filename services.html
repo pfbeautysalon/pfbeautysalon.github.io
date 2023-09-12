@@ -5,7 +5,7 @@ title: Services
 <div class="flex flex-col items-center bg-slate-100">
   <h1 class="m-12 text-6xl font-semibold">Facial</h1>
   <!-- Regular Mask Treatment Section -->
-  <h2 class="m-10 text-5xl lg:m-5">Mask treatments</h2>
+  <h2 class="m-10 text-5xl lg:m-5">Regular Masks</h2>
   {% for mask in site.data.facial %}
     <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
       <div class="lg:flex">
@@ -16,7 +16,7 @@ title: Services
     </div>
   {% endfor %}
   <!-- Special Mask Treatment Section -->
-  <h2 class="m-10 text-5xl lg:m-5">Special Treatments</h2>
+  <h2 class="m-10 text-5xl lg:m-5">Delux Treatment</h2>
   {% for mask in site.data.facial-special %}
     <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
       <div class="lg:flex">
@@ -37,9 +37,9 @@ title: Services
 </div>
 
 
-<!-- Machine Therapy -->
+<!-- Mechanical Therapy -->
 <div class="flex flex-col items-center">
-  <h1 class="m-12 text-6xl font-semibold">Machine Therapy</h1>
+  <h1 class="m-12 text-6xl font-semibold">Mechanical Therapy</h1>
   <!-- Aurora -->
   <h2 class="m-10 text-5xl lg:m-5">Aurora</h2>
   {% for mask in site.data.machine-aurora %}
@@ -53,6 +53,15 @@ title: Services
   <!-- Indiba -->
   <h2 class="m-10 text-5xl lg:m-5">Indiba</h2>
   {% for mask in site.data.machine-indiba %}
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
+      <a href="" class="font-semibold">{{ mask.name }}</a>
+      <div class="">{{ mask.property }}</div>
+      <div class="">{{ mask.price }}</div>
+    </div>
+  {% endfor %}
+  <!-- Sauna -->
+  <h2 class="m-10 text-5xl lg:m-5">Sauna</h2>
+  {% for mask in site.data.sauna %}
     <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
       <a href="" class="font-semibold">{{ mask.name }}</a>
       <div class="">{{ mask.property }}</div>
