@@ -1,6 +1,6 @@
-- name: TCM massage
-  property: (60mins)
-  price: $90
+- name: TCM 推拿 
+  property: (by senior therapist)
+  price: $90/hour
 - name: TCM injury treatment
-  property: (per injury)
-  price: $90
+  property: (by senior therapist)
+  price: $90/injury
