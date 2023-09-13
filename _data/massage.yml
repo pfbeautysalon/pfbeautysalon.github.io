@@ -1,0 +1,9 @@
+- name: 中医推拿
+  property: （资深推拿师）
+  price: $90/hour
+- name: Aromatherapy massage
+  property: (with essential oils)
+  price: $90/hour
+- name: Sports massage
+  property: (with essential oils)
+  price: $90/hour
