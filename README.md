@@ -11,4 +11,4 @@ By deploying tailwind with jekyll on github pages, you will have errors with the
 permissions:
   contents: write
 ```
-Important thing to note about the tutorial is that you will also need to follow the comment at the bottom if you're deploying to a custom domain.
+Important thing to note about the tutorial is that you will also need to follow the comment at the bottom if you're deploying to a custom domain. 
