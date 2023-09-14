@@ -2,7 +2,7 @@
   link: /
 - name: Services
   link: /services.html
-- name: About
-  link: /about.html
-- name: Staff
-  link: /staff.html
+# - name: About
+#   link: /about.html
+# - name: Staff
+#   link: /staff.html
