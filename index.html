@@ -2,30 +2,31 @@
 title: Home
 ---
 
-<div class="px-6 text-center pt-14 lg:px-8 bg-slate-400 h-[calc(100vh*2/3)] flex flex-col justify-center text-white" style="background-image: url('../assets/photos/face_5.webp');">
-    <h1 class="font-bold tracking-tight text-red-600 text-9xl lg:text-8xl">PrettyFace<br>Beauty Salon</h1>
-    <p class="my-10 text-5xl leading-tight lg:text-3xl lg:mx-72">Operating for over 20 years, delivering excellent quality beauty and health services for our clients.</p>
-    <div class="flex items-center justify-center gap-x-6">
+<div class="px-6 text-center pt-14 lg:px-8  h-[calc(100vh*2/3)] flex flex-col justify-center">
+<!-- <div class="px-6 text-center pt-14 lg:px-8 bg-slate-400 h-[calc(100vh*2/3)] flex flex-col justify-center text-white" style="background-image: url('../assets/photos/face_5.webp');"> -->
+    <h1 class="font-bold tracking-tight text-red-600 text-8xl lg:text-7xl">Pretty Face<br>Beauty Salon</h1>
+    <p class="m-10 text-4xl italic font-light leading-tight lg:text-2xl lg:mx-72">Delivering quality beauty and health services<br class="lg:hidden">for our clients for over 20 years</p>
+    <div class="flex items-center justify-center mt-20 gap-x-6">
         <a href="tel:+6567634281" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Book Appointment</a>
     </div>
 </div>
 
 <!-- Services Section -->
-<section class="my-24">
+<section class="my-24 mt-96 lg:mt-36">
     <div class="max-w-4xl mx-auto text-center">
         <h2 class="my-10 text-6xl font-semibold lg:text-6xl">Services</h2>
         <div class="grid grid-cols-1 gap-20 lg:gap-8 lg:grid-cols-3">
-            <div class="w-11/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:shadow-2xl">
+            <div class="w-11/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:outline-red-600 hover:outline-2 hover:outline">
                 <img class="object-cover aspect-square" src="../assets/photos/face_7.webp" alt="">
                 <h3 class="pt-8 mt-8 text-5xl font-normal text-gray-900 lg:pt-3 lg:mt-0 lg:text-2xl">Facial</h3>
                 <p class="m-8 text-4xl text-gray-600 lg:m-3 lg:text-base">Blackheads, wrinkles, dryness, scars. Experience our luxurious facial treatment to help improve your skin conditions.</p>
             </div>
-            <div class="w-11/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:shadow-2xl">
+            <div class="w-11/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:outline-red-600 hover:outline-2 hover:outline">
                 <img class="object-cover aspect-square" src="../assets/photos/magicpot_3.webp" alt="">
                 <h3 class="pt-8 mt-8 text-5xl font-normal text-gray-900 lg:pt-3 lg:mt-0 lg:text-2xl">Massage</h3>
                 <p class="m-8 text-4xl text-gray-600 lg:m-3 lg:text-base">Treat your sore muscles, aching pains and sprained ligaments. We use traditional chinese massaging techniques as certified practitioners.</p>
             </div>
-            <div class="w-11/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:shadow-2xl">
+            <div class="w-11/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:outline-red-600 hover:outline-2 hover:outline">
                 <img class="object-cover aspect-square" src="../assets/photos/indiba_3.webp" alt="">
                 <h3 class="pt-8 mt-8 text-5xl font-normal text-gray-900 lg:pt-3 lg:mt-0 lg:text-2xl">Machine Therapy</h3>
                 <p class="m-8 text-4xl text-gray-600 lg:m-3 lg:text-base">Using state-of-the-art machines for effective relaxation and health treatments.</p>
@@ -54,13 +55,20 @@ title: Home
 
 
 <!-- Contact Section -->
-<section class="flex flex-col justify-center py-12 bg-gray-100 h-96">
-    <div class="max-w-4xl mx-auto text-center">
+<section id="contactus" class="flex flex-col justify-center py-24 bg-gray-100 h-96">
+    <div class="max-w-4xl mx-auto text-center mb-14">
         <h2 class="mb-10 text-6xl font-semibold ">Contact Us</h2>
-        <p class="mb-8 text-4xl text-gray-600 lg:text-xl">We only take appointments through phone calls</p>
-        <a href="tel:+6567634281" class="inline-block px-6 py-2 text-4xl text-white bg-red-600 rounded-lg hover:bg-red-500">Book now</a>
+        <p class="mb-8 text-4xl text-gray-600 lg:text-xl">Call us at: +65 6763 4281<br>or<br>Book Appointment WhatsApp: +65 9698 2281</p>
     </div>
-</section>
+    <div class="flex items-center justify-center mx-4 gap-x-6">
+        <!-- call button -->
+        <a href="tel:+6567634281" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Call now</a>
+        <!-- whatsapp button -->
+        <a href="https://wa.me/6596982281" target="_blank" rel="noopener noreferrer" class="p-6 text-4xl font-semibold text-white bg-green-500 rounded-lg lg:text-2xl lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 hover:bg-green-600">
+        <span class="mr-2 fab fa-whatsapp">WhatsApp</span>
+        </a>
+    </div>
+  </section>
 
 <!-- Locate Us -->
 <div class="py-36">

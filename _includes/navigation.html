@@ -1,7 +1,7 @@
 <header>
   <nav class="flex items-center justify-between lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="#" class="m-8 lg:m-0 p-1.5">
+      <a href="/" class="m-8 lg:m-0 p-1.5">
         <span class="sr-only">Your Company</span>
         <img class="w-auto h-20" src="../assets/photos/logos/transparent-logo.png" alt="">
       </a>
@@ -16,7 +16,7 @@
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
       {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" class="{% if page.url == item.link %} underline {% endif %} text-lg font-semibold leading-6 text-gray-900 hover:underline">
+        <a href="{{ item.link }}" class="{% if page.url == item.link %} underline decoration-red-600 decoration-4 {% endif %} text-lg font-semibold leading-6 text-gray-900 hover:underline hover:decoration-red-600 hover:decoration-2">
           {{ item.name }}
         </a>
       {% endfor %}
@@ -28,7 +28,7 @@
     <!-- Background backdrop, show/hide based on slide-over state. -->
     <div type="button" class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
-        <a href="#" class="p-1.5">
+        <a href="/" class="p-1.5">
           <img class="w-auto rounded-lg h-28" src="../assets/photos/logos/transparent-logo.png" alt="">
         </a>
         <!-- Cross Button -->
@@ -43,7 +43,7 @@
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="py-6 m-8 space-y-2">
             {% for item in site.data.navigation %}
-              <a href="{{ item.link }}" class="{% if page.url == item.link %} underline {% endif %} block px-3 py-14 -mx-3 text-5xl font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50 hover:underline">
+              <a href="{{ item.link }}" class="{% if page.url == item.link %} underline decoration-red-600 decoration-4 {% endif %} block px-3 py-14 -mx-3 text-5xl font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50 hover:underline hover:decoration-red-600 hover:decoration-4">
                 {{ item.name }}
               </a>
             {% endfor %}
