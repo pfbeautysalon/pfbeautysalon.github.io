@@ -37,13 +37,14 @@ title: Services
 <!-- Massage -->
 <div class="flex flex-col items-center">
   <h1 class="m-12 text-6xl font-semibold">Massage</h1>
+  <!-- TCM methods -->
   <h2 class="m-10 text-5xl lg:m-5">TCM methods</h2>
   {% for mask in site.data.massage %}
-    <blue class="flex flex-col items-center justify-between w-1/2 m-2 text-4xl lg:text-xl lg:flex lg:flex-row">
+    <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
       <a href="" class="font-semibold">{{ mask.name }}</a>
       <div class="">{{ mask.property }}</div>
       <div class="">{{ mask.price }}</div>
-    </blue>
+    </div>
   {% endfor %}
   <div class="flex">
     <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
@@ -60,7 +61,6 @@ title: Services
   <h2 class="m-10 text-5xl lg:m-5">Aurora</h2>
   {% for mask in site.data.machine-aurora %}
     <div class="flex flex-row items-center justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-2/6">
-
       <a href="" class="font-semibold">{{ mask.name }}</a>
       <div class="">{{ mask.property }}</div>
       <div class="">{{ mask.price }}</div>
