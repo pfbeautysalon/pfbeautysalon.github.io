@@ -7,23 +7,23 @@ title: Services
   <!-- Regular Mask Treatment Section -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Casmara Exclusive</h2>
   {% for mask in site.data.facial %}
-    <div class="flex flex-row justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
-      <div class="lg:flex">
-        <div class="font-semibold">{{ mask.name }}</div>
-        <div class="lg:ml-32">{{ mask.property }}</div>
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div class="font-semibold ">{{ mask.name }}</div>
+        <div class="">{{ mask.property }}</div>
       </div>
-      <div class="">{{ mask.price }}</div>
+      <div class="text-end ">{{ mask.price }}</div>
     </div>
   {% endfor %}
   <!-- Special Mask Treatment Section -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Delux Treatment</h2>
   {% for mask in site.data.facial-special %}
-    <div class="flex flex-row justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
-      <div class="lg:flex">
-        <div class="font-semibold">{{ mask.name }}</div>
-        <div class="lg:ml-32">{{ mask.property }}</div>
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div class="font-semibold ">{{ mask.name }}</div>
+        <div class="">{{ mask.property }}</div>
       </div>
-      <div class="">{{ mask.price }}</div>
+      <div class="text-end ">{{ mask.price }}</div>
     </div>
   {% endfor %}
   <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
@@ -38,12 +38,12 @@ title: Services
   <!-- TCM methods -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">TCM methods</h2>
   {% for mask in site.data.massage %}
-    <div class="flex flex-row justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
-      <div class="lg:flex">
-        <div class="font-semibold">{{ mask.name }}</div>
-        <div class="lg:ml-32">{{ mask.property }}</div>
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div class="font-semibold ">{{ mask.name }}</div>
+        <div class="">{{ mask.property }}</div>
       </div>
-      <div class="">{{ mask.price }}</div>
+      <div class="text-end ">{{ mask.price }}</div>
     </div>
   {% endfor %}
   <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
@@ -58,34 +58,34 @@ title: Services
   <!-- Aurora -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Aurora</h2>
   {% for mask in site.data.machine-aurora %}
-    <div class="flex flex-row justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
-      <div class="lg:flex">
-        <div class="font-semibold">{{ mask.name }}</div>
-        <div class="lg:ml-32">{{ mask.property }}</div>
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div class="font-semibold ">{{ mask.name }}</div>
+        <div class="">{{ mask.property }}</div>
       </div>
-      <div class="">{{ mask.price }}</div>
+      <div class="text-end ">{{ mask.price }}</div>
     </div>
   {% endfor %}
   <!-- Indiba -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Indiba</h2>
   {% for mask in site.data.machine-indiba %}
-    <div class="flex flex-row justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
-      <div class="lg:flex">
-        <div class="font-semibold">{{ mask.name }}</div>
-        <div class="lg:ml-32">{{ mask.property }}</div>
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div class="font-semibold ">{{ mask.name }}</div>
+        <div class="">{{ mask.property }}</div>
       </div>
-      <div class="">{{ mask.price }}</div>
+      <div class="text-end ">{{ mask.price }}</div>
     </div>
   {% endfor %}
   <!-- Sauna -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Sauna</h2>
   {% for mask in site.data.sauna %}
-    <div class="flex flex-row justify-between w-4/6 m-2 text-4xl lg:text-xl lg:w-3/6">
-      <div class="lg:flex">
-        <div class="font-semibold">{{ mask.name }}</div>
-        <div class="lg:ml-32">{{ mask.property }}</div>
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div class="font-semibold ">{{ mask.name }}</div>
+        <div class="">{{ mask.property }}</div>
       </div>
-      <div class="">{{ mask.price }}</div>
+      <div class="text-end ">{{ mask.price }}</div>
     </div>
   {% endfor %}
   <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
