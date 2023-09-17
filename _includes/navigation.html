@@ -1,12 +1,14 @@
 <header>
   <nav class="flex items-center justify-between lg:px-8" aria-label="Global">
+    <!-- Logo -->
     <div class="flex lg:flex-1">
       <a href="/" class="m-8 lg:m-0 p-1.5">
-        <span class="sr-only">Your Company</span>
-        <img class="w-auto h-20" src="../assets/photos/logos/transparent-logo.png" alt="">
+        <span class="sr-only">Pretty Face Beauty Salon</span>
+        <img class="h-20 m-3 lg:h-10" src="../assets/photos/logos/transparent-logo.svg" alt="">
       </a>
     </div>
-    <div class="flex lg:hidden">
+    <!-- Menu icon -->
+    <div class="flex mx-5 lg:hidden">
       <div type="button" class="m-4 inline-flex items-center justify-center p-2.5" id="mobileDefaultButton">
         <span class="sr-only">Open main menu</span>
         <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -14,7 +16,8 @@
         </svg>
       </div>
     </div>
-    <div class="hidden lg:flex lg:gap-x-12">
+    <!-- List of menu items -->
+    <div class="hidden lg:flex lg:gap-x-12 lg:mx-8">
       {% for item in site.data.navigation %}
         <a href="{{ item.link }}" class="{% if page.url == item.link %} underline decoration-red-600 {% endif %} text-lg font-semibold leading-6 text-gray-900 hover:underline hover:decoration-red-600 hover:decoration-2 underline-offset-8">
           {{ item.name }}
@@ -34,7 +37,7 @@
         <!-- Cross Button -->
         <div class="m-4 outline-none p-2.5" id="mobileSideMenuButton">
           <span class="sr-only">Close menu</span>
-          <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" aria-hidden="true">
+          <svg class="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </div>
