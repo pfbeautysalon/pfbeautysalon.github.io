@@ -1,27 +1,27 @@
 - name: Green Tea mask
   property: (Anti-stress)
-  price: $128
+  price: $128/1.5hr
 - name: Daitom mask
   property: (Detoxifying)
-  price: $128
+  price: $128/1.5hr
 - name: Vitamin C mask
   property: (Anti-wrinkles)
-  price: $128
+  price: $128/1.5hr
 - name: Oats mask 👍
   property: (Soothing sensitive skin)
-  price: $128
+  price: $128/1.5hr
 - name: Mint Essence mask
   property: (Oxygenating & Moisturizing)
-  price: $138
+  price: $138/1.5hr
 - name: Flaxseed Aloe Vera mask
   property: (Regenerating & Anti-irritant)
-  price: $138
+  price: $138/1.5hr
 - name: Kiwi mask
   property: (Firming & whitening)
-  price: $138
+  price: $138/1.5hr
 - name: Goji Berries mask
   property: (Antioxidant & Anti-aging)
-  price: $138
+  price: $138/1.5hr
 - name: 24 Karat Gold Dust mask
   property: (Remineralizing & revitalizing)
-  price: $168
+  price: $168/1.5hr
