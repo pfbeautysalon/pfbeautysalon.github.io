@@ -4,3 +4,6 @@
 - name: Armpit
   property: (35mins)
   price: $98
+- name: Face
+  property: (40mins)
+  price: $128

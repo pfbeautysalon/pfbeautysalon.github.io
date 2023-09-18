@@ -1,3 +1,6 @@
+- name: Face
+  property: (30mins)
+  price: $60
 - name: Upper Back
   property: (35mins)
   price: $68
