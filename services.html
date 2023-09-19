@@ -35,48 +35,6 @@ title: Services
 <!-- Body Treatments -->
 <div class="flex flex-col items-center my-40">
   <h1 class="mt-12 font-bold text-red-500 text-7xl">Body Treatments</h1>
-  <!-- TCM -->
-  <h2 class="m-10 text-5xl font-semibold lg:m-5">TCM</h2>
-  {% for mask in site.data.tcm %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
-      <div class="col-span-5 lg:flex lg:justify-between">
-        <div class="font-semibold ">{{ mask.name }}</div>
-        <div class="">{{ mask.property }}</div>
-      </div>
-      <div class="text-right">{{ mask.price }}</div>
-    </div>
-  {% endfor %}
-  <!-- TCM -->
-  <h2 class="m-10 text-5xl font-semibold lg:m-5">Scrapping 刮痧疗法</h2>
-  {% for mask in site.data.scrapping %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
-      <div class="col-span-5 lg:flex lg:justify-between">
-        <div class="font-semibold ">{{ mask.name }}</div>
-        <div class="">{{ mask.property }}</div>
-      </div>
-      <div class="text-right">{{ mask.price }}</div>
-    </div>
-  {% endfor %}
-  <!-- TCM -->
-  <h2 class="m-10 text-5xl font-semibold lg:m-5">Other Massage</h2>
-  {% for mask in site.data.others-massage %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
-      <div class="col-span-5 lg:flex lg:justify-between">
-        <div class="font-semibold ">{{ mask.name }}</div>
-        <div class="">{{ mask.property }}</div>
-      </div>
-      <div class="text-right">{{ mask.price }}</div>
-    </div>
-  {% endfor %}
-  <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
-    <a href="#contactus" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
-  </div>
-</div>
-
-
-<!-- Machine Therapy -->
-<div class="flex flex-col items-center my-40">
-  <h1 class="mt-12 font-bold text-red-500 text-7xl">Machine Therapy</h1>
   <!-- Aurora -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Aurora</h2>
   {% for mask in site.data.machine-aurora %}
