@@ -1,7 +1,7 @@
 # Scrapping Massage 刮痧疗法
-- name: Back Scrapping Massage
+- name: Back Scrapping
   property: (背部刮痧)
   price: $45/0.5hr
-- name: Face Scrapping Massage
+- name: Face Scrapping
   property: (脸部刮痧)
   price: $58/0.5hr
