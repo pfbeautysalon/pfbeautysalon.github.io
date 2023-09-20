@@ -1,4 +1,4 @@
-# pfbeautysalon
+# prettyfacebeautysalon.com
 
 A humble beauty store in Bukit Panjang.
 
