@@ -1,6 +1,7 @@
 ---
 title: Services
 ---
+<div class="h-64 bg-right bg-cover" style="background-image: url(../assets/photos/png/facial_banner.webp)"></div>
 
 <div class="flex flex-col items-center mb-40">
   <h1 class="mt-12 font-bold text-red-500 text-7xl">Facial</h1>
@@ -32,13 +33,15 @@ title: Services
 </div>
 
 
+<div class="bg-center bg-cover h-72" style="background-image: url(../assets/photos/png/massage_banner.webp)"></div>
+
 <!-- Body Treatments -->
-<div class="flex flex-col items-center my-40">
+<div class="flex flex-col items-center mb-40">
   <h1 class="mt-12 font-bold text-red-500 text-7xl">Body Treatments</h1>
   <!-- Aurora -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">TCM</h2>
   {% for mask in site.data.tcm %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-5/12">
       <div class="col-span-5 lg:flex lg:justify-between">
         <div class="font-semibold ">{{ mask.name }}</div>
         <div class="">{{ mask.property }}</div>
@@ -49,7 +52,7 @@ title: Services
   <!-- Aurora -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Aurora</h2>
   {% for mask in site.data.machine-aurora %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/3">
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/3">
       <div class="col-span-5 lg:flex lg:justify-between">
         <div class="font-semibold ">{{ mask.name }}</div>
         <div class="">{{ mask.property }}</div>
@@ -60,7 +63,7 @@ title: Services
   <!-- Indiba -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Indiba</h2>
   {% for mask in site.data.machine-indiba %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/3">
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/3">
       <div class="col-span-5 lg:flex lg:justify-between">
         <div class="font-semibold ">{{ mask.name }}</div>
         <div class="">{{ mask.property }}</div>
@@ -71,7 +74,7 @@ title: Services
   <!-- Sauna -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Sauna</h2>
   {% for mask in site.data.sauna %}
-    <div class="grid w-5/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-1/2">
+    <div class="grid w-4/6 grid-cols-6 m-2 text-4xl lg:text-xl lg:w-5/12">
       <div class="col-span-5 lg:flex lg:justify-between">
         <div class="font-semibold ">{{ mask.name }}</div>
         <div class="">{{ mask.property }}</div>
@@ -89,7 +92,7 @@ title: Services
 <section id="contactus" class="flex flex-col justify-center py-24 my-40 h-96">
   <div class="max-w-4xl mx-auto text-center">
       <h2 class="mb-10 text-6xl font-semibold ">Consult Us</h2>
-      <p class="mb-8 text-4xl text-gray-600 lg:text-xl">Call us: +65 6763 4281<br>or<br>WhatsApp Us: +65 9698 2281<br>or<br>Book appointment online below</p>
+      <p class="mb-8 text-4xl text-gray-600 lg:text-xl">Call us: +65 6763 4281<br>or<br>WhatsApp Us: +65 9698 2281</p>
   </div>
     <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
       <!-- call button -->
