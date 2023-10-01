@@ -1,6 +1,8 @@
 - name: Regular sauna
   property: (includes shower)
-  price: $48/0.5hr
+  time: 30mins
+  price: $48
 - name: Body Wrapping sauna
   property: (Sliming & relaxation)
-  price: $98/0.5hr
+  time: 30mins
+  price: $98

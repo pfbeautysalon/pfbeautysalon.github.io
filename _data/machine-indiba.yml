@@ -1,9 +1,12 @@
 - name: Tummy
-  property: (35mins)
+  property:
+  time: (35mins)
   price: $98
 - name: Armpit
-  property: (35mins)
+  property:
+  time: (35mins)
   price: $98
 - name: Face
-  property: (40mins)
+  property:
+  time: (40mins)
   price: $128

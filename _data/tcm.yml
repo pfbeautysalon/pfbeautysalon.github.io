@@ -1,4 +1,13 @@
 # TCM
 - name: TCM Tui Na 中医推拿
   property: (by Qualified Senior Therapist)
-  price: $45/0.5hr
+  time: 30mins
+  price: $45
+- name: Aromatherapy treatment
+  property: (using essential oils)
+  time: 30mins
+  price: $45
+- name: Sports Injury treatment
+  property: (by Qualified Senior Therapist)
+  time: per injury
+  price: $90

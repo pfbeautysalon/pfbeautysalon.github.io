@@ -1,9 +1,12 @@
 - name: Eye Perfection
   property: (Intense rejuvenating)
-  price: $138/hr
+  time: 1 hour
+  price: $138
 - name: Advanced Nacar treatment
   property: (Anti-pigmentation)
-  price: $298/2hr
+  time: 2 hour
+  price: $298
 - name: Personalized Skin Sensations
   property: (Intense Anti-aging)
-  price: $298/2hr
+  time: 2 hour
+  price: $298

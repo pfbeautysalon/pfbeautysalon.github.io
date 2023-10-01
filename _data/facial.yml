@@ -1,27 +1,36 @@
 - name: Green Tea mask
   property: (Anti-stress)
-  price: $128/1.5hr
+  time: 1hr 45mins
+  price: $128
 - name: Charcoal mask
   property: (Detoxifying)
-  price: $128/1.5hr
+  time: 1hr 45mins
+  price: $128
 - name: Vitamin C mask
   property: (Anti-wrinkles)
-  price: $128/1.5hr
+  time: 1hr 45mins
+  price: $128
 - name: Oats mask 👍
   property: (Soothing sensitive skin)
-  price: $128/1.5hr
+  time: 1hr 45mins
+  price: $128
 - name: Mint Essence mask
   property: (Oxygenating & Moisturizing)
-  price: $138/1.5hr
+  time: 1hr 45mins
+  price: $138
 - name: Flaxseed Aloe Vera mask
   property: (Regenerating & Anti-irritant)
-  price: $138/1.5hr
+  time: 1hr 45mins
+  price: $138
 - name: Kiwi mask
   property: (Firming & whitening)
-  price: $138/1.5hr
+  time: 1hr 45mins
+  price: $138
 - name: Goji Berries mask
   property: (Antioxidant & Anti-aging)
-  price: $138/1.5hr
+  time: 1hr 45mins
+  price: $138
 - name: 24 Karat Gold Dust mask
   property: (Remineralizing & revitalizing)
-  price: $168/1.5hr
+  time: 1hr 45mins
+  price: $188
