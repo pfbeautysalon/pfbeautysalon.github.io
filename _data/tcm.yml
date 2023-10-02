@@ -5,8 +5,8 @@
   price: $45
 - name: Aromatherapy treatment
   property: (using essential oils)
-  time: 30mins
-  price: $45
+  time: 1 hour
+  price: $90
 - name: Sports Injury treatment
   property: (by Qualified Senior Therapist)
   time: per injury
