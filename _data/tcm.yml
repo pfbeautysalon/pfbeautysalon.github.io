@@ -3,6 +3,10 @@
   property: (by Qualified Senior Therapist)
   time: 30mins
   price: $45
+- name: TCM facial GuaSha 脸部刮痧
+  property: (by Qualified TCM Therapist)
+  time: 30mins
+  price: $58
 - name: Aromatherapy treatment
   property: (using essential oils)
   time: 1 hour

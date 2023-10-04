@@ -9,4 +9,8 @@
 - name: Face
   property:
   time: (40mins)
-  price: $128
+  price: $138
+- name: Full Body
+  property: (price depends on mask)
+  time: (40mins)
+  price: $268-298
