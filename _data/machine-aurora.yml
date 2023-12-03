@@ -1,14 +1,14 @@
 - name: Face
   property:
   time: (30mins)
-  price: $58
+  price: $68
 - name: Upper Back
   property:
-  time: (35mins)
+  time: (30mins)
   price: $68
 - name: Tummy
   property:
-  time: (35mins)
+  time: (30mins)
   price: $68
 - name: Thigh
   property:
