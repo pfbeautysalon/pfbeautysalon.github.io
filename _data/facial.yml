@@ -1,5 +1,3 @@
-- name: Ampoule
-  price: $38
 - name: Green Tea mask
   property: (Anti-stress)
   time: 1hr 45mins
@@ -37,3 +35,6 @@
   # property: (Remineralizing & revitalizing)
   time: 1hr 45mins
   price: $188
+- name: "*Ampoule"
+  property: add-on
+  price: $38

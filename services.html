@@ -100,6 +100,20 @@ title: Services
       <div class="text-right">{{ mask.price }}</div>
     </div>
   {% endfor %}
+  <!-- Add On -->
+  <h2 class="m-10 text-5xl font-semibold lg:m-5">Add On</h2>
+  {% for add_on in site.data.add-ons %}
+    <div class="grid w-2/3 grid-cols-6 m-2 my-4 text-4xl lg:text-xl lg:w-1/3 lg:my-2">
+      <div class="col-span-5 lg:flex lg:justify-between">
+        <div>
+          <div class="font-semibold">{{ add_on.name }}</div>
+          <div class="italic font-light">{{ add_on.property }}</div>
+        </div>
+        <div class="font-light">{{ add_on.time }}</div>
+      </div>
+      <div class="text-right">{{ add_on.price }}</div>
+    </div>
+  {% endfor %}
   <div class="flex items-center justify-center mx-4 my-10 gap-x-6">
     <a href="#contactus" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-400 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Consult us</a>
   </div>
