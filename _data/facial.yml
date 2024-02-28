@@ -1,5 +1,11 @@
+- name: Ampoule
+  price: $38
 - name: Green Tea mask
   property: (Anti-stress)
+  time: 1hr 45mins
+  price: $128
+- name: Green mint mask
+  property: (Oxygenating & Moisturizing)
   time: 1hr 45mins
   price: $128
 - name: Marine Extract mask
@@ -14,10 +20,6 @@
   property: (Soothing sensitive skin)
   time: 1hr 45mins
   price: $128
-- name: Green mask
-  property: (Oxygenating & Moisturizing)
-  time: 1hr 45mins
-  price: $138
 - name: Flaxseed mask
   property: (Regenerating & Anti-irritant)
   time: 1hr 45mins

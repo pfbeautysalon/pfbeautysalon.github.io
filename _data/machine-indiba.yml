@@ -1,16 +1,20 @@
-- name: Tummy
+- name: Single body part
   property:
-  time: (35mins)
-  price: $98
-- name: Armpit
-  property:
-  time: (35mins)
+  time: (40mins)
   price: $98
 - name: Face
-  property: without mask and extraction
+  property: (no mask and extraction)
   time: (40mins)
   price: $138
-- name: Full Facial
-  property: (price depends on mask)
+- name: Basic facial
+  property: (with mask and extraction)
   time: (40mins)
-  price: $268-298
+  price: $268
+- name: Anti-aging facial
+  property: (with mask and extraction)
+  time: (40mins)
+  price: $278
+- name: Gold facial
+  property: (with mask and extraction)
+  time: (40mins)
+  price: $298
