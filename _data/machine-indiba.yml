@@ -1,12 +1,16 @@
-- name: Single body part
-  property:
+- name: Indiba Armpit
+  property: (Detox)
+  time: (30mins)
+  price: $49
+- name: Indiba Tummy
+  property: (Detox)
   time: (40mins)
   price: $98
-- name: Face
+- name: Purely Indiba Facial
   property: (no mask and extraction)
   time: (40mins)
   price: $138
-- name: Basic facial
+- name: Standard Indiba Facial
   property: (with mask and extraction)
   time: (2hr)
   price: $268
