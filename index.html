@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <link type="application/atom+xml" rel="alternate" href="https://pfbeautysalon.github.io//feed.xml" />
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Home</title>
-<meta name="generator" content="Jekyll v4.3.2" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="Home" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="https://pfbeautysalon.github.io//" />
@@ -28,13 +29,6 @@
   <body>
     <header>
   <nav class="flex items-center justify-between lg:px-8" aria-label="Global">
-    <!-- Logo -->
-    <div class="flex lg:flex-1">
-      <a href="/" class="m-8 lg:m-0 p-1.5">
-        <span class="sr-only">Pretty Face Beauty Salon</span>
-        <img class="h-20 m-3 lg:h-10" src="../assets/photos/logos/transparent-logo.svg" alt="">
-      </a>
-    </div>
     <!-- Menu icon -->
     <div class="flex mx-5 lg:hidden">
       <div type="button" class="m-4 inline-flex items-center justify-center p-2.5" id="mobileDefaultButton">
@@ -44,6 +38,14 @@
         </svg>
       </div>
     </div>
+    <!-- Logo -->
+    <div class="flex lg:flex-1">
+      <a href="/" class="m-8 lg:m-0 p-1.5">
+        <span class="sr-only">Pretty Face Beauty Salon</span>
+        <img class="h-20 m-3 lg:h-10" src="../assets/photos/logos/transparent-logo.svg" alt="">
+      </a>
+    </div>
+    <div class="hidden lg:block">📞 +65 67634281 (Bukit Panjang)</div>
     <!-- List of menu items -->
     <div class="hidden lg:flex lg:gap-x-12 lg:mx-8">
       
@@ -55,13 +57,13 @@
           Services
         </a>
       
-    </div>
+    </div>    
   </nav>
   
   <!-- Mobile menu, show/hide based on menu open state. -->
   <div class="hidden lg:hidden animate-slideIn" role="dialog" aria-modal="true" id="mobileSideMenu">
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div type="button" class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+    <div type="button" class="fixed inset-y-0 left-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
       <div class="flex items-center justify-between">
         <a href="/" class="p-1.5">
           <img class="w-auto rounded-lg h-28" src="../assets/photos/logos/transparent-logo.svg" alt="">
@@ -106,19 +108,78 @@
     mobileSideMenu.classList.toggle('hidden');
   });
 </script>
-    <div class="px-6 text-center pt-14 lg:px-8  h-[calc(100vh*2/3)] flex flex-col justify-center">
-<!-- <div class="px-6 text-center pt-14 lg:px-8 bg-slate-400 h-[calc(100vh*2/3)] flex flex-col justify-center text-white" style="background-image: url('../assets/photos/face_5.webp');"> -->
-    <h1 class="font-bold tracking-tight text-red-600 text-8xl lg:text-7xl">Pretty Face<br>Beauty Salon</h1>
-    <p class="m-10 text-4xl italic font-light leading-tight lg:text-2xl lg:mx-72">Delivering quality beauty and health services<br class="lg:hidden"> for our clients for over 20 years</p>
-    <div class="flex items-center justify-center mt-20 gap-x-6">
-        <a href="#contactus" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Contact Us</a>
+    <div class="relative h-[calc(100vh*1/3)] md:h-[calc(100vh*2/3)] bg-[url('../assets/photos/hero.jpg')] bg-cover bg-center pl-20">
+    <!-- Dark overlay -->
+    <!-- <div class="absolute inset-0 bg-black/50 lg:bg-gradient-to-r lg:from-black/50 lg:via-white/10 lg:to-black/50"></div> -->
+  
+    <!-- Content (stays on top of overlay) -->
+    <div class="relative flex flex-col justify-center h-full text-left">
+      <h1 class="font-bold tracking-tight text-red-600 text-8xl lg:text-7xl">
+        Pretty Face<br>Beauty Salon
+      </h1>
+      <p class="flex-wrap mt-10 mb-20 text-4xl italic font-bold leading-tight text-left lg:text-2xl">
+        Quality health and beauty provider<br class="lg:hidden">
+        for over 
+        <span class="px-2 text-6xl font-extrabold text-red-600 ">20</span>
+        years!
+      </p>            
+      <div class="">
+        <a href="#contactus" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
+          Contact Us
+        </a>
+      </div>
     </div>
 </div>
+  
+
+
+
+<!-- Reviews Section -->
+<section class="my-60 lg:my-40" id="google-review">
+    <div class="max-w-4xl mx-auto text-center lg:max-w-6xl">
+        <h2 class="my-32 font-bold lg:my-10 text-7xl lg:text-5xl">Customer Reviews</h2>
+        <div class="grid grid-cols-1 gap-16 lg:gap-10 lg:grid-cols-3">
+            <!-- Review 1 -->
+            <div class="flex flex-col justify-center p-4 rounded-lg hover:outline-red-600 hover:outline-2 hover:outline">
+                <div class="flex items-center justify-center mb-2">
+                    <span class="text-red-600 text-8xl lg:text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="ml-2 text-4xl text-gray-900 lg:text-base">(5 stars)</span>
+                </div>
+                <a href="https://g.co/kgs/dVRmCG" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-blue-500 hover:underline lg:text-base">Pei Zhen Chue</a>
+                <p class="m-20 mt-2 text-4xl text-gray-900 lg:text-base lg:m-0">Has been going to the salon for more than a decade now. No hard selling and package, pay per every visit. Everyone in the shop is warm, very <strong>knowledgeable</strong> and go for regular product updates/ trainings. Treatments done be it for facial or body are always done <strong>meticulously</strong>. Highly recommended!</p>
+            </div>
+            <!-- Review 2 -->
+            <div class="flex flex-col justify-center p-4 rounded-lg hover:outline-red-600 hover:outline-2 hover:outline">
+                <div class="flex items-center justify-center mb-2">
+                    <span class="text-red-600 text-8xl lg:text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="ml-2 text-4xl text-gray-900 lg:text-base">(5 stars)</span>
+                </div>
+                <a href="https://g.co/kgs/vFfrs5" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-blue-500 hover:underline lg:text-base">Li Nah Lau</a>
+                <p class="m-20 mt-2 text-4xl text-gray-900 lg:text-base lg:m-0">Lady boss Jenna is definitely very knowledgeble in her field, both facial and massage. Been a customer for <strong>more than a decade</strong> as there's totally no hard selling and treatment is recommended based on need. To stay young and pretty and at affordable price, Pretty Face Beauty Salon is the <strong>Best Option</strong>.</p>
+            </div>
+            <!-- Review 3 -->
+            <div class="flex flex-col justify-center p-4 rounded-lg hover:outline-red-600 hover:outline-2 hover:outline">
+                <div class="flex items-center justify-center mb-2">
+                    <span class="text-red-600 text-8xl lg:text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span class="ml-2 text-4xl text-gray-900 lg:text-base">(5 stars)</span>
+                </div>
+                <a href="https://g.co/kgs/8q8NuQ" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-blue-500 hover:underline lg:text-base">Kimberly Ong</a>
+                <p class="m-20 mt-2 text-4xl text-gray-900 lg:text-base lg:m-0">Have been doing facial at this place for more than a year. The place is accessible, <strong>clean</strong> and comfortable. The owner and staff are <strong>very polite</strong> and skilled. My face looks and feels cleaner after every session, and is less sensitive and less prone to breakouts now.
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center justify-center mt-10 gap-x-6">
+            <a target="_blank" rel="noreferrer noopener" href="https://www.google.com.sg/maps/place/Pretty+Face+Beauty+Salon/@1.3783653,103.7682711,17z/data=!3m1!5s0x31da11a73aa6bf43:0xeca7c5b08b56b7d5!4m8!3m7!1s0x31da11a73071a2e3:0x871d84cf1b1f3bc0!8m2!3d1.3783599!4d103.773142!9m1!1b1!16s%2Fg%2F1wb8r664?entry=ttu" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">All reviews</a>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Services Section -->
-<section class="my-96 lg:my-52">
+<section class="my-60 lg:my-40">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="my-32 font-semibold lg:my-10 text-7xl lg:text-5xl">Services</h2>
+        <h2 class="my-32 font-bold lg:my-10 text-7xl lg:text-5xl">Services</h2>
         <div class="grid grid-cols-1 gap-36 lg:gap-10 lg:grid-cols-2">
             <div class="w-10/12 mx-auto overflow-hidden rounded-lg bg-slate-50 lg:w-full hover:outline-red-600 hover:outline-2 hover:outline">
                 <img class="object-cover aspect-square" src="../assets/photos/face_8.webp" alt="">
@@ -140,9 +201,9 @@
 
 
 <!-- Official suppliers -->
-<div class="my-96 lg:my-52">
+<div class="my-60 lg:my-40">
     <div class="max-w-6xl px-4 mx-auto text-center">
-        <h2 class="font-semibold text-7xl lg:text-5xl ">Official suppliers</h2>
+        <h2 class="mt-32 font-bold text-7xl lg:text-5xl ">Official suppliers</h2>
         <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
             <img src="../assets/photos/logos/casmara.webp" alt="Partner Logo" class="w-full h-auto rounded-lg">
             <img src="../assets/photos/logos/janssen_cosmetics.webp" alt="Partner Logo" class="w-full h-auto rounded-lg">
@@ -153,53 +214,12 @@
 </div>
 
 
-<!-- Reviews Section -->
-<section class="my-96 lg:my-52" id="google-review">
-    <div class="max-w-4xl mx-auto text-center lg:max-w-6xl">
-        <h2 class="my-32 font-semibold lg:my-10 text-7xl lg:text-5xl">Google Reviews</h2>
-        <div class="grid grid-cols-1 gap-16 lg:gap-10 lg:grid-cols-3">
-            <!-- Review 1 -->
-            <div class="flex flex-col justify-center p-4 rounded-lg hover:outline-red-600 hover:outline-2 hover:outline">
-                <div class="flex items-center justify-center mb-2">
-                    <span class="text-4xl text-red-600 lg:text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span class="ml-2 text-4xl text-gray-900 lg:text-base">(5 stars)</span>
-                </div>
-                <a href="https://g.co/kgs/dVRmCG" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-blue-500 hover:underline lg:text-base">Pei Zhen Chue</a>
-                <p class="m-20 mt-2 text-4xl text-gray-900 lg:text-base lg:m-0">Has been going to the salon for more than a decade now. No hard selling and package, pay per every visit. Everyone in the shop is warm, very <strong>knowledgeable</strong> and go for regular product updates/ trainings. Treatments done be it for facial or body are always done <strong>meticulously</strong>. Highly recommended!</p>
-            </div>
-            <!-- Review 2 -->
-            <div class="flex flex-col justify-center p-4 rounded-lg hover:outline-red-600 hover:outline-2 hover:outline">
-                <div class="flex items-center justify-center mb-2">
-                    <span class="text-4xl text-red-600 lg:text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span class="ml-2 text-4xl text-gray-900 lg:text-base">(5 stars)</span>
-                </div>
-                <a href="https://g.co/kgs/vFfrs5" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-blue-500 hover:underline lg:text-base">Li Nah Lau</a>
-                <p class="m-20 mt-2 text-4xl text-gray-900 lg:text-base lg:m-0">Lady boss Jenna is definitely very knowledgeble in her field, both facial and massage. Been a customer for <strong>more than a decade</strong> as there's totally no hard selling and treatment is recommended based on need. To stay young and pretty and at affordable price, Pretty Face Beauty Salon is the <strong>Best Option</strong>.</p>
-            </div>
-            <!-- Review 3 -->
-            <div class="flex flex-col justify-center p-4 rounded-lg hover:outline-red-600 hover:outline-2 hover:outline">
-                <div class="flex items-center justify-center mb-2">
-                    <span class="text-4xl text-red-600 lg:text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                    <span class="ml-2 text-4xl text-gray-900 lg:text-base">(5 stars)</span>
-                </div>
-                <a href="https://g.co/kgs/8q8NuQ" target="_blank" rel="noopener noreferrer" class="text-4xl font-semibold text-blue-500 hover:underline lg:text-base">Kimberly Ong</a>
-                <p class="m-20 mt-2 text-4xl text-gray-900 lg:text-base lg:m-0">Have been doing facial at this place for more than a year. The place is accessible, <strong>clean</strong> and comfortable. The owner and staff are <strong>very polite</strong> and skilled. My face looks and feels cleaner after every session, and is less sensitive and less prone to breakouts now.
-                </p>
-            </div>
-        </div>
-        <div class="flex items-center justify-center mt-20 gap-x-6">
-            <a target="_blank" rel="noreferrer noopener" href="https://www.google.com.sg/maps/place/Pretty+Face+Beauty+Salon/@1.3783653,103.7682711,17z/data=!3m1!5s0x31da11a73aa6bf43:0xeca7c5b08b56b7d5!4m8!3m7!1s0x31da11a73071a2e3:0x871d84cf1b1f3bc0!8m2!3d1.3783599!4d103.773142!9m1!1b1!16s%2Fg%2F1wb8r664?entry=ttu" class="p-6 text-4xl font-semibold text-white bg-red-600 rounded-lg lg:text-2xl hover:bg-red-500 lg:p-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">All reviews</a>
-        </div>
-    </div>
-</section>
-
-
 <!-- Find Us -->
-<div class="my-96 lg:my-52">
+<div class="my-60 lg:my-40">
     <div class="max-w-6xl mx-auto text-center">
         <h2 class="mb-10 font-semibold text-7xl lg:text-5xl">Find Us</h2>
-        <iframe title="googleMap" class="mx-auto rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.664622240571!2d103.77056087533911!3d1.377899761484275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11a73071a2e3%3A0x871d84cf1b1f3bc0!2sPretty%20Face%20Beauty%20Salon!5e0!3m2!1sen!2sjp!4v1693541200191!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <address class="m-8 text-4xl lg:text-xl">
+        <iframe title="googleMap" class="w-11/12 mx-auto rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.664622240571!2d103.77056087533911!3d1.377899761484275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11a73071a2e3%3A0x871d84cf1b1f3bc0!2sPretty%20Face%20Beauty%20Salon!5e0!3m2!1sen!2sjp!4v1693541200191!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <address class="m-8 text-5xl lg:text-xl">
             258 Bukit Panjang Ring Rd<br>
             level 2, #01-64<br>
             s(670258)
@@ -209,7 +229,7 @@
 
 <br id="contactus">
 <!-- Contact Section -->
-<section class="flex flex-col justify-center my-96 lg:my-52">
+<section class="flex flex-col justify-center my-60 lg:my-40">
     <div class="max-w-4xl mx-auto text-center mb-14">
         <h2 class="mb-10 font-semibold text-7xl lg:text-5xl ">Contact Us</h2>
         <p class="mb-8 text-4xl text-gray-900 lg:text-xl">Book us: +65 6763 4281<br>or<br>Book Appointment WhatsApp: +65 9698 2281</p>
