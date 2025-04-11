@@ -23,6 +23,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-postcss
+  - jekyll-redirect-from
 
 postcss:
   cache: false

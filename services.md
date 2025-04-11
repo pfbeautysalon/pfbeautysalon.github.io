@@ -1,5 +1,7 @@
 ---
 title: Services
+redirect_from:
+  - /services/
 ---
 <div class="h-64 bg-right bg-cover" style="background-image: url(../assets/photos/facial_banner.webp)"></div>
 
