@@ -88,20 +88,6 @@ redirect_from:
       <div class="text-right">{{ mask.price }}</div>
     </div>
   {% endfor %}
-  <!-- Sauna -->
-  <h2 class="m-10 text-5xl font-semibold lg:m-5">Sauna</h2>
-  {% for mask in site.data.sauna %}
-    <div class="grid w-2/3 grid-cols-6 m-2 my-4 text-4xl lg:text-xl lg:w-1/3 lg:my-2">
-      <div class="col-span-5 lg:flex lg:justify-between">
-        <div>
-          <div class="font-semibold">{{ mask.name }}</div>
-          <div class="italic font-light">{{ mask.property }}</div>
-        </div>
-        <div class="font-light">{{ mask.time }}</div>
-      </div>
-      <div class="text-right">{{ mask.price }}</div>
-    </div>
-  {% endfor %}
   <!-- Add On -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Add On</h2>
   {% for add_on in site.data.add-ons %}
