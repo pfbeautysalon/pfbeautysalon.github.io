@@ -1,6 +1,10 @@
 - name: TCM facial GuaSha 脸部刮痧
   property: (by Qualified TCM Therapist)
-  time: 30mins
+  time: 35mins
+  price: $68
+- name: TCM Meridian Bo Jing 拨筋
+  property: (by Qualified TCM Therapist)
+  time: 35mins
   price: $68
 - name: Eye Perfection
   property: (Intense rejuvenating)
