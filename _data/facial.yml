@@ -29,5 +29,11 @@
   price: "$198"
   time: 1hr 45mins
   masks:
+    - name: Eye Perfection
+      property: Intense rejuvenating
+      time: 1 hour
+      price: $148
     - name: 24 Karat Gold Dust mask
       property: Includes free ampoule worth $38
+      time: 1hr 45mins
+      price: $198
