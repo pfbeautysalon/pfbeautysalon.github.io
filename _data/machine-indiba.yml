@@ -9,16 +9,4 @@
 - name: Purely Indiba Facial
   property: (no mask and extraction)
   time: (40mins)
-  price: $138
-- name: Standard Indiba Facial
-  property: (with mask and extraction)
-  time: (2hr)
-  price: $268
-- name: Anti-aging facial
-  property: (with mask and extraction)
-  time: (2hr)
-  price: $278
-- name: Gold facial
-  property: (with mask and extraction)
-  time: (2hr)
-  price: $298
+  price: $148
