@@ -1,40 +1,33 @@
-- name: Green Tea mask
-  property: (Anti-stress)
+- label: Essential
+  price: "$138"
   time: 1hr 45mins
-  price: $138
-- name: Green mint mask
-  property: (Oxygenating & Moisturizing)
+  addon: "*Ampoule add-on: +$38"
+  masks:
+    - name: Green Tea mask
+      property: Anti-stress
+    - name: Green mint mask
+      property: Oxygenating & Moisturizing
+    - name: Marine Extract mask
+      property: Detoxifying
+    - name: Vitamin C mask
+      property: Anti-wrinkles
+    - name: Oats mask
+      property: Soothing sensitive skin
+      recommended: true
+- label: Plus
+  price: "$148"
   time: 1hr 45mins
-  price: $138
-- name: Marine Extract mask
-  property: (Detoxifying)
+  addon: "*Ampoule add-on: +$38"
+  masks:
+    - name: Flaxseed mask
+      property: Regenerating & Anti-irritant
+    - name: Kiwi mask
+      property: Firming & whitening
+    - name: Goji Berries mask
+      property: Antioxidant & Anti-aging
+- label: Premium
+  price: "$198"
   time: 1hr 45mins
-  price: $138
-- name: Vitamin C mask
-  property: (Anti-wrinkles)
-  time: 1hr 45mins
-  price: $138
-- name: Oats mask 👍
-  property: (Soothing sensitive skin)
-  time: 1hr 45mins
-  price: $138
-- name: Flaxseed mask
-  property: (Regenerating & Anti-irritant)
-  time: 1hr 45mins
-  price: $148
-- name: Kiwi mask
-  property: (Firming & whitening)
-  time: 1hr 45mins
-  price: $148
-- name: Goji Berries mask
-  property: (Antioxidant & Anti-aging)
-  time: 1hr 45mins
-  price: $148
-- name: 24 Karat Gold Dust mask
-  property: (with free ampoule worth $38)
-  # property: (Remineralizing & revitalizing)
-  time: 1hr 45mins
-  price: $198
-- name: "*Ampoule"
-  property: add-on
-  price: $38
+  masks:
+    - name: 24 Karat Gold Dust mask
+      property: Includes free ampoule worth $38

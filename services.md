@@ -9,17 +9,48 @@ redirect_from:
   <h1 class="mt-12 font-bold text-red-600 text-7xl">Facial</h1>
   <!-- Regular Mask Treatment Section -->
   <h2 class="m-10 text-5xl font-semibold lg:m-5">Casmara Exclusive</h2>
-  {% for mask in site.data.facial %}
-    <div class="grid w-2/3 grid-cols-6 m-2 my-4 text-4xl lg:text-xl lg:w-1/3 lg:my-2">
-      <div class="col-span-5 lg:flex lg:justify-between">
-        <div>
-          <div class="font-semibold">{{ mask.name }}</div>
-          <div class="italic font-light">{{ mask.property }}</div>
+  {% for tier in site.data.facial %}
+    {% if tier.label == "Gold" %}
+      <div class="w-4/5 lg:w-2/5 bg-white border border-amber-200 shadow-md rounded-2xl p-8 mb-6 lg:p-6 lg:mb-4">
+        <div class="pb-4 mb-4 border-b border-amber-100">
+          <div class="flex justify-between items-baseline">
+            <span class="text-5xl font-bold text-amber-600 lg:text-3xl">{{ tier.label }}</span>
+            <span class="text-3xl text-gray-400 font-light lg:text-sm">{{ tier.time }}</span>
+          </div>
+          <span class="text-4xl font-bold text-red-600 lg:text-2xl">{{ tier.price }}</span>
         </div>
-        <div class="font-light">{{ mask.time }}</div>
+        <ul class="space-y-4 lg:space-y-2">
+          {% for mask in tier.masks %}
+            <li class="text-3xl lg:text-base">
+              <div class="font-semibold">{{ mask.name }}</div>
+              <div class="italic text-gray-500 text-2xl lg:text-sm">({{ mask.property }})</div>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
-      <div class="text-right">{{ mask.price }}</div>
-    </div>
+    {% else %}
+      <div class="w-4/5 lg:w-2/5 bg-white border border-gray-100 shadow-md rounded-2xl p-8 mb-6 lg:p-6 lg:mb-4">
+        <div class="pb-4 mb-4 border-b border-gray-100">
+          <div class="flex justify-between items-baseline">
+            <span class="text-5xl font-bold lg:text-3xl">{{ tier.label }}</span>
+            <span class="text-3xl text-gray-400 font-light lg:text-sm">{{ tier.time }}</span>
+          </div>
+          <span class="text-4xl font-bold text-red-600 lg:text-2xl">{{ tier.price }}</span>
+        </div>
+        <ul class="space-y-4 lg:space-y-2">
+          {% for mask in tier.masks %}
+            <li class="text-3xl lg:text-base">
+              <div class="flex items-center gap-3">
+                <span class="font-semibold">{{ mask.name }}</span>
+                {% if mask.recommended %}<span class="text-2xl lg:text-sm font-normal bg-red-50 text-red-500 rounded-full px-3 py-0.5 shrink-0">Recommended</span>{% endif %}
+              </div>
+              <div class="italic text-gray-500 text-2xl lg:text-sm">({{ mask.property }})</div>
+            </li>
+          {% endfor %}
+        </ul>
+        {% if tier.addon %}<p class="mt-4 pt-3 border-t border-gray-100 text-3xl text-gray-400 italic lg:text-sm">{{ tier.addon }}</p>{% endif %}
+      </div>
+    {% endif %}
   {% endfor %}
   <!-- Special Mask Treatment Section -->
   <h2 class="m-10 mt-20 text-5xl font-semibold lg:m-5">Delux Treatment</h2>
