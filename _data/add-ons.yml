@@ -1,8 +1,12 @@
 - name: Cellulite essential Oil
   property: (Eve Taylor)
-  time: (full body)
+  time: 
   price: $20
 - name: Cellulite essential Cream
   property: (Eve Taylor)
-  time: (full body)
+  time: 
   price: $30
+- name: Eye Serum
+  property: (Casmara)
+  time: 
+  price: $38
